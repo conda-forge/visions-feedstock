@@ -1,5 +1,5 @@
 {% set name = "visions" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.4" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eef9a0cdfc0facb753e54ac1cc0af4af8e3ad5d21541aa17e15a405eea252b85
+  sha256: 523da4a172a3e485d801ad643ef233cc12c7247cb77643362fbf5c3453cc4003
 
 build:
   number: 0
@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
     - attrs >=19.3.0
     - networkx >=2.4
     - numpy 
     - pandas >=0.25.3
-    - python >=3.6
-    - tangled-up-in-unicode >=0.0.3
+    - python
+    - tangled-up-in-unicode >=0.0.4
 
 test:
   imports:
