@@ -5,13 +5,15 @@ Home: https://github.com/dylan-profiler/visions
 
 Package license: BSD-4-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/visions-feedstock/blob/master/LICENSE.txt)
 
 Summary: Visions provides an extensible suite of tools to support common data analysis operations including
 type inference on unknown data, casting data types and automated data summarization.
 
 
+Development: https://github.com/dylan-profiler/visions
 
+Documentation: https://dylan-profiler.github.io/visions/
 
 Current build status
 ====================
