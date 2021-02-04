@@ -1,5 +1,5 @@
 {% set name = "visions" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 47bbceb9d6efe931120ef2dff871e4df9591380abb25cae9c23f9a1dfb1dd20f
+  sha256: d9d10a0da8de80d0704c28c084282abbd3273065cd9e6a494b6fe7e3b339ee23
 
 build:
   number: 0
