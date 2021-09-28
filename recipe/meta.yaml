@@ -25,7 +25,6 @@ requirements:
     - pandas >=0.25.3
     - python >=3.6
     - tangled-up-in-unicode >=0.0.4
-    - bottleneck
     - multimethod 1.4
 
 test:
