@@ -1,16 +1,16 @@
 {% set name = "visions" %}
-{% set version = "0.7.6" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00f494a7f78917db2292e11ea832c6e026b64783e688b11da24f4c271ef1631d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 37f55c37d7bcf124054e612850b28a4f0bab9b200733cedd8f1781c3ac5cc3f0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
