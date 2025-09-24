@@ -32,13 +32,37 @@ requirements:
     - networkx >=2.4
     - multimethod >=1.4
     - puremagic
+  run_constraints:
+    # https://github.com/dylan-profiler/visions/blob/v0.8.1/pyproject.toml#L34C1-L46C17
+    # type_geometry
+    - shapely
+    # type_image_path
+    - imagehash
+    - Pillow
+    - puremagic
+    # plotting
+    - pydot
+    - pygraphviz
+    - matplotlib-base
 
 tests:
-  - python:
-      imports:
-        - visions
-      pip_check: true
-      python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - pip
+        - python ${{ python_min }}.*
+        # type_geometry
+        - shapely
+        # type_image_path
+        - imagehash
+        - Pillow
+        - puremagic
+        # plotting
+        - pydot
+        - pygraphviz
+        - matplotlib-base
+    script:
+      - pip check
+      - python -c "import visions; assert visions.__version__ == '${{ version }}'"
 
 about:
   homepage: https://github.com/dylan-profiler/visions
