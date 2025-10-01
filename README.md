@@ -7,9 +7,8 @@ Home: https://github.com/dylan-profiler/visions
 
 Package license: BSD-4-Clause
 
-Summary: Visions provides an extensible suite of tools to support common data analysis operations including
+Summary: Visions provides an extensible suite of tools to support common data analysis operations including 
 type inference on unknown data, casting data types and automated data summarization.
-
 
 Development: https://github.com/dylan-profiler/visions
 
@@ -150,4 +149,5 @@ Feedstock Maintainers
 =====================
 
 * [@philip-khor](https://github.com/philip-khor/)
+* [@rxm7706](https://github.com/rxm7706/)
 
